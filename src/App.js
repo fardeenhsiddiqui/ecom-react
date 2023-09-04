@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Contact from './Contact';
 import About from './About';
-import Products from './Products';
+import SingleProduct from './SingleProduct';
 import ErrorPage from './ErrorPage';
 import { GlobalStyle } from './GlobalStyles';
 import { ThemeProvider } from 'styled-components';
@@ -47,7 +47,7 @@ function App()  {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-          <Route path="/s-products/:id" element={<Products />} />
+          <Route path="/s-products/:id" element={<SingleProduct />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />
