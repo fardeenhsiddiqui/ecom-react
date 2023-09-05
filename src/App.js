@@ -10,6 +10,7 @@ import { GlobalStyle } from './GlobalStyles';
 import { ThemeProvider } from 'styled-components';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Products from './Products';
 
 function App()  {
 
@@ -48,6 +49,7 @@ function App()  {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/s-products/:id" element={<SingleProduct />} />
+          <Route path="/products" element={<Products />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />
